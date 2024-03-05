@@ -188,7 +188,6 @@ p + p {
 }
 
 @media only screen and (max-width: 768px) {
-    .welcome {
-        padding-top: 400px;
+    .container {
     }
 }
