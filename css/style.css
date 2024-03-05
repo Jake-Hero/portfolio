@@ -1,0 +1,194 @@
+@import url('font.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#about-me img {
+    height: 15%;
+    width: 25%;
+    transition: 0.5s;
+}
+
+#about-me img:hover {
+    transform: scale(1.3); 
+}
+
+.content {
+    height: 100%;
+    width: 80%;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.welcome {
+    float: left;
+    display: grid;
+    padding-left: 20%;
+    /*padding-top: 450px;*/
+}
+
+.rounded {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #c8c8c8;
+    box-shadow: 1px 5px 5px;
+}
+
+.justine-ramos {
+    float: right;
+    display: grid;
+    /*padding-top: 300px;*/
+    padding-right: 20%;
+}
+
+.welcome h1 {
+    font-weight: 400;
+    font: 2.875rem 'Lemon/Milk', sans-serif; 
+}
+
+.welcome h3 {
+    font-weight: 400;
+    font-family: 'monospace', monospace;
+}
+
+.welcome h5 {
+    font-weight: 400;
+    font: 1.25rem 'monospace', monospace;
+}
+
+.cv-button {
+    background-color: #FFFFFF; /* #5C4033 */
+    border: 0.001rem solid black;
+
+    font-weight: 400;
+    font-family: 'Lemon/Milk', sans-serif; 
+    color: black;
+
+    width: 10rem;
+    padding: 1rem;
+
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none; 
+
+    border-radius: 100rem;
+    transition: 0.5s;
+}
+
+.contact-button {
+    background-color: #000000; /* #5C4033 */
+
+    font-weight: 400;
+    font-family: 'Lemon/Milk', sans-serif; 
+    color: white;
+
+    width: 50%;
+    padding: 5%;
+
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none; 
+
+    border-radius: 100rem;
+    transition: 0.5s;
+}
+
+.contact-button:hover {
+    background-color: #6e6e6e;
+}
+
+#about-me {
+    display: grid;
+    padding-left: 15%;
+    align-items: center;
+    /*padding-top: 450px;*/    
+}
+
+#about-me h1 {
+    font-weight: 400;
+    font: 3.75rem 'Lemon/Milk', sans-serif; 
+    align-items: center;
+    cursor: pointer;
+}
+
+p + p {
+    margin-top: 1.875rem;
+}
+
+#about-me p {
+    font: 1.25rem 'Noto Sans';
+    text-align: justify;
+}
+
+#about-me b {
+    color: #33AA33;
+    font-weight: bolder;
+}
+
+#about-me .container {
+    padding-top: 3.75rem;
+}
+
+.buttons { 
+    display: flex; 
+    column-gap: 15px;
+    justify-content: center;
+    padding-bottom: 1rem;
+} 
+
+#about-me button {
+    background-color: #5C4033; /* #5C4033 */
+    box-shadow: 5px 5px 5px #000000;
+    border: none;
+
+    font-weight: 400;
+    font-family: 'Lemon/Milk', sans-serif; 
+    color: white;
+
+    width: 20%;
+    padding: 1%;
+
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none; 
+
+    cursor: pointer;
+
+    transition: 0.5s;    
+}
+
+#about-me button:hover {
+    transform: scale(1.3); 
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome {
+        padding-top: 400px;
+    }
+}
