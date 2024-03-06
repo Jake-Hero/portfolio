@@ -11,6 +11,7 @@ body {
     width: auto;
     height: 100%;
     background-color: #fafafa;
+    overflow-x: hidden !important;
 }
 
 section {
@@ -24,12 +25,19 @@ section {
 .container {
     width: 100%;
     height: auto;
-    padding-bottom: 50px;
+    box-sizing: border-box;
 }
 
 .content {
-    height: 100%;
-    width: 80%;
+    box-sizing: border-box;
+    min-width: 100%;
+    max-width: 100%;
+    position: relative;
+    padding: 5%;
+}
+
+#techstack {
+    padding-bottom: 15rem;
 }
 
 .content h1 {
@@ -78,14 +86,17 @@ section {
 }
 
 .buttons {
-    padding-top: 10px;
     display: flex; 
     column-gap: 15px;
+    padding-top: 1rem;
     justify-content: center;
-    padding-bottom: 1rem;
 } 
 
 /* Welcome Section */
+/*#welcome-section {
+    background-color: #33AA33;
+}*/
+
 .welcome {
     float: left;
     display: grid;
@@ -124,11 +135,9 @@ section {
 }
 
 /* About Me Section */
+
 #about-me {
-    display: flex;
-    padding-left: 15%;
-    align-items: center;
-    /*padding-top: 450px;*/    
+    display: inline-block;
 }
 
 #about-me h1 {
@@ -147,12 +156,7 @@ p + p {
 }
 
 #about-me b {
-    color: #33AA33;
     font-weight: bolder;
-}
-
-#about-me .container {
-    padding-top: 3.75rem;
 }
 
 #about-me button {
@@ -190,24 +194,33 @@ p + p {
     transform: scale(1.3); 
 }
 
-/* Contact Me section */
-#contact-me {
-    display: flex;
-    padding-left: 15%;
-    align-items: center;
+/* My Projects section */
+#my-projects {
     font-family: 'Noto Sans';
-    /*padding-top: 450px;*/    
+    /*padding-top: 450px;
+    background-color: aquamarine;*/    
 }
 
-#contact-me .container {
-    padding-top: 3.75rem;
-    display: grid;
-}
-
-#contact-me h1 {
+#my-projects h1 {
     font-weight: 400;
     font: 3.75rem 'Lemon/Milk', sans-serif; 
     cursor: pointer;
+}
+
+.project-container {
+    width: 100%;
+    height: 50%;
+
+    border: 1px solid;
+}
+
+.project-container content {
+    align-items: center;
+}
+
+.project-container img {
+    max-width: 30%;
+    width: 30%;
 }
 
 /* Footer */
