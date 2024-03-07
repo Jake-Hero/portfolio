@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -32,12 +31,9 @@ section {
     box-sizing: border-box;
     min-width: 100%;
     max-width: 100%;
+    max-height: 1000px;
     position: relative;
     padding: 5%;
-}
-
-#techstack {
-    padding-bottom: 15rem;
 }
 
 .content h1 {
@@ -52,14 +48,14 @@ section {
     font-family: 'Lemon/Milk', sans-serif; 
     color: black;
 
-    width: 10rem;
-    padding: 1rem;
+    width: 160px;
+    padding: 16px;
 
     text-align: center;
-    font-size: 1rem;
+    font-size: 16px;
     text-decoration: none; 
 
-    border-radius: 100rem;
+    border-radius: 1600px;
     transition: 0.5s;
 }
 
@@ -70,14 +66,14 @@ section {
     font-family: 'Lemon/Milk', sans-serif; 
     color: white;
 
-    width: 50%;
-    padding: 5%;
+    width: 160px;
+    padding: 16px;
 
     text-align: center;
-    font-size: 1rem;
+    font-size: 16px;
     text-decoration: none; 
 
-    border-radius: 100rem;
+    border-radius: 1600px;
     transition: 0.5s;
 }
 
@@ -88,9 +84,13 @@ section {
 .buttons {
     display: flex; 
     column-gap: 15px;
-    padding-top: 1rem;
+    padding-top: 16px;
     justify-content: center;
 } 
+
+.header {
+    padding-bottom: 50px;
+}
 
 /* Welcome Section */
 /*#welcome-section {
@@ -99,14 +99,13 @@ section {
 
 .welcome {
     float: left;
-    display: grid;
     padding-left: 20%;
     /*padding-top: 450px;*/
 }
 
 .rounded {
-    height: 100%;
-    width: 100%;
+    height: 450px;
+    width: 450px;
     border-radius: 50%;
     background-color: #c8c8c8;
     box-shadow: 1px 5px 5px;
@@ -114,14 +113,13 @@ section {
 
 .justine-ramos {
     float: right;
-    display: grid;
     /*padding-top: 300px;*/
     padding-right: 20%;
 }
 
 .welcome h1 {
     font-weight: 400;
-    font: 2.875rem 'Lemon/Milk', sans-serif; 
+    font: 46px 'Lemon/Milk', sans-serif; 
 }
 
 .welcome h3 {
@@ -131,7 +129,7 @@ section {
 
 .welcome h5 {
     font-weight: 400;
-    font: 1.25rem 'monospace', monospace;
+    font: 20px 'monospace', monospace;
 }
 
 /* About Me Section */
@@ -142,7 +140,7 @@ section {
 
 #about-me h1 {
     font-weight: 400;
-    font: 3.75rem 'Lemon/Milk', sans-serif; 
+    font: 60px 'Lemon/Milk', sans-serif; 
     cursor: pointer;
 }
 
@@ -159,20 +157,29 @@ p + p {
     font-weight: bolder;
 }
 
+#about-me img {
+    height: 15%;
+    width: 25%;
+    transition: 0.5s;
+}
+
+#about-me img:hover {
+    transform: scale(1.3); 
+}
+
 #about-me button {
     background-color: #5C4033; /* #5C4033 */
     box-shadow: 5px 5px 5px #000000;
     border: none;
 
     font-weight: 400;
-    font-family: 'Lemon/Milk', sans-serif; 
+    font: 15px 'Lemon/Milk', sans-serif; 
     color: white;
 
     width: 20%;
     padding: 1%;
 
     text-align: center;
-    font-size: 1rem;
     text-decoration: none; 
 
     cursor: pointer;
@@ -181,16 +188,6 @@ p + p {
 }
 
 #about-me button:hover {
-    transform: scale(1.3); 
-}
-
-#about-me img {
-    height: 15%;
-    width: 25%;
-    transition: 0.5s;
-}
-
-#about-me img:hover {
     transform: scale(1.3); 
 }
 
@@ -203,7 +200,7 @@ p + p {
 
 #my-projects h1 {
     font-weight: 400;
-    font: 3.75rem 'Lemon/Milk', sans-serif; 
+    font: 60px 'Lemon/Milk', sans-serif; 
     cursor: pointer;
 }
 
@@ -244,4 +241,49 @@ footer a {
 
 footer .contacts {
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .welcome h3 {
+        font-weight: 400;
+        font: 14px 'monospace', monospace;
+    }    
+    
+    .welcome h5 {
+        font-weight: 400;
+        font: 15px 'monospace', monospace;
+    }
+
+    .rounded {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cv-button {
+        width: 90px;
+        font-size: 8px;
+    }
+    
+    .contact-button {
+        width: 90px;
+        font-size: 8px;
+    }
+    
+    #about-me h1 {
+        font: 40px 'Lemon/Milk', sans-serif; 
+    }
+
+    #about-me button {
+        width: 30%;
+        font: 11px 'Lemon/Milk', sans-serif; 
+    }
+
+    #my-projects h1 {
+        font: 40px 'Lemon/Milk', sans-serif; 
+    }
+
+    #my-projects {
+        padding-top: 50%;
+    }
 }
