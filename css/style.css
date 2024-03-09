@@ -95,7 +95,6 @@ section {
 }*/
 
 .welcome {
-    float: left;
     padding-left: 20%;
     /*padding-top: 450px;*/
 }
@@ -118,7 +117,6 @@ section {
 }
 
 .justine-ramos {
-    float: right;
     /*padding-top: 300px;*/
     padding-right: 20%;
 }
@@ -268,7 +266,12 @@ footer .contacts {
     padding-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
+/* Phones & Tablets */
+@media screen and (max-width: 768px) {
+    .welcome {
+        margin: 0 auto;
+    }
+
     .welcome h1 {
         font-weight: 400;
         font: 23px 'Lemon/Milk', sans-serif; 
@@ -290,9 +293,8 @@ footer .contacts {
 
     .rounded-mobile {
         display: block;
-        align-items: center;
-        margin-bottom: 35px;
-        margin-left: 30px;
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
 
     .cv-button {
@@ -337,8 +339,13 @@ footer .contacts {
         font-size: 16px;
         text-align: justify;
     }
+
     .project-img {
         height: auto;
         max-width: 100%;
+    }
+
+    .project-container:hover {
+        transform: scale(1.1);
     }
 }
