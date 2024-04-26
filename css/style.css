@@ -116,6 +116,15 @@ section {
     box-shadow: 1px 5px 5px;    
 }
 
+.rounded-mid {
+    display: none;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-color: #c8c8c8;
+    box-shadow: 1px 5px 5px;    
+}
+
 .justine-ramos {
     /*padding-top: 300px;*/
     padding-right: 20%;
@@ -312,7 +321,7 @@ footer .contacts {
 }
 
 /* Phones & Tablets */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .welcome {
         margin: 0 auto;
     }
@@ -350,6 +359,172 @@ footer .contacts {
     .contact-button {
         width: 90px;
         font-size: 8px;
+    }
+    
+    #about-me h1 {
+        font: 35px 'Lemon/Milk', sans-serif; 
+    }
+
+    #about-me button {
+        width: 30%;
+        font: 11px 'Lemon/Milk', sans-serif; 
+    }
+
+    #my-projects h1 {
+        font: 35px 'Lemon/Milk', sans-serif; 
+    }
+
+    .project-container {
+        min-width: 100%;
+        min-height: 100%;
+    
+        background-color: inherit;
+        border-radius: none;
+        box-shadow: none;
+
+        border: none;
+    }    
+
+    .project-container h2 {
+        font-size: 20px;
+    }
+
+    .project-container p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .project-img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .project-container:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 769px) {
+    .welcome {
+        margin: 0 auto;
+    }
+
+    .welcome h1 {
+        font-weight: 400;
+        font: 23px 'Lemon/Milk', sans-serif; 
+    }
+
+    .welcome h3 {
+        font-weight: 400;
+        font: 14px 'monospace', monospace;
+    }    
+    
+    .welcome h5 {
+        font-weight: 400;
+        font: 15px 'monospace', monospace;
+    }
+
+    .rounded, .rounded-mid {
+        display: none;
+    }
+
+    .rounded-mobile {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .cv-button {
+        width: 90px;
+        font-size: 8px;
+    }
+    
+    .contact-button {
+        width: 90px;
+        font-size: 8px;
+    }
+    
+    #about-me h1 {
+        font: 35px 'Lemon/Milk', sans-serif; 
+    }
+
+    #about-me button {
+        width: 30%;
+        font: 11px 'Lemon/Milk', sans-serif; 
+    }
+
+    #my-projects h1 {
+        font: 35px 'Lemon/Milk', sans-serif; 
+    }
+
+    .project-container {
+        min-width: 100%;
+        min-height: 100%;
+    
+        background-color: inherit;
+        border-radius: none;
+        box-shadow: none;
+
+        border: none;
+    }    
+
+    .project-container h2 {
+        font-size: 20px;
+    }
+
+    .project-container p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .project-img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .project-container:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 901px) {
+    .welcome {
+        margin: 0 auto;
+    }
+
+    .welcome h1 {
+        font-weight: 400;
+        font: 29px 'Lemon/Milk', sans-serif; 
+    }
+
+    .welcome h3 {
+        font-weight: 400;
+        font: 18px 'monospace', monospace;
+    }    
+    
+    .welcome h5 {
+        font-weight: 400;
+        font: 20px 'monospace', monospace;
+    }
+
+    .rounded, .rounded-mobile {
+        display: none;
+    }
+
+    .rounded-mid {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .cv-button {
+        width: 94px;
+        font-size: 12px;
+    }
+    
+    .contact-button {
+        width: 94px;
+        font-size: 12px;
     }
     
     #about-me h1 {
