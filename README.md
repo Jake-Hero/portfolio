@@ -1,6 +1,6 @@
 # Portfolio Website
 
-My personal portfolio website run via Netlify. 
+My personal portfolio website that is currently run via Netlify (https://justine-ramos-portfolio.netlify.app/)
 
-THe website is purely written in HTML and CSS (with no dependencies on Bootstrap).
+This project is purely written on HTML and CSS (with no dependencies on Bootstrap).
 
