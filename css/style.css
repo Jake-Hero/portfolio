@@ -234,6 +234,7 @@ p + p {
 
 .project-container h2 {
     margin-bottom: 20px;
+    line-height: 0.5px !important;
 }
 
 .project-container p {
@@ -387,6 +388,7 @@ footer .contacts {
 
     .project-container h2 {
         font-size: 20px;
+        line-height: unset !important;
     }
 
     .project-container p {
@@ -470,6 +472,7 @@ footer .contacts {
 
     .project-container h2 {
         font-size: 20px;
+        line-height: unset !important;
     }
 
     .project-container p {
@@ -553,6 +556,7 @@ footer .contacts {
 
     .project-container h2 {
         font-size: 20px;
+        line-height: unset !important;
     }
 
     .project-container p {
